@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Inscrição</h1>
+        <P>Preencha os dados abaixos para se inscrever no Tech Experience 2027</P>
+        <p> de <b>22</b>a <b>26</b> de março de 2027</p>
+    </header>
+    <a href="index.html"> Início</a>
+    <a href="programacao.html"> Programação</a>
+    <a href="palestrantes.html"> Palestrantes</a>
+    <a href="local.html"> Local</a>
+    <a href="galeria.html"> Galeria</a>
+    <a href="inscricao.html"> Inscrição</a>
+    <div>
+        <h2>Orientações para inscrição</h2>
+        <button command="show-modal" commandfor="orientacao">
+            Ver orientações da inscrição
+        </button>
+        <dialog id="orientacao">
+        <h3>Tech Experience 2027</h3>
+        <p><b>Atenção!</b></p>
+        <p>As atividades são gratuitas, porém algumas oficinas possuem vagas limitadas</p>
+        <p>Preencha todos os seus dados no formulário e garanta sua presença!</p>
+        <form method="dialog">
+        <button>Fechar</button>
+        </form>
+        </dialog>
+    </div>
+    <section>
+        <h2>Dados Pessoais</h2>
+        <form>
+            <label for="nome">Nome Completo</label>
+            <input 
+            type="text" 
+            id="nome" 
+            name="nome" 
+            placeholder="Digite seu Nome Completo" 
+            required>
+
+            <label for="nome">E-mail</label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="nome@exemplo.com" 
+            required>
+
+            <label for="nome">CEP</label>
+            <input 
+            type="number" 
+            id="cep" 
+            name="CEP" 
+            placeholder="01234-567" 
+            required>
+
+            <label for="nome">Telefone</label>
+            <input 
+            type="tel" 
+            id="telefone" 
+            name="Telefone" 
+            placeholder="11 99999-9999" 
+            required>
+
+            <label for="nome">CPF</label>
+            <input 
+            type="number" 
+            id="cpf" 
+            name="CPF" 
+            placeholder="123.456.789.00" 
+            required>
+            
+            <label for="nome">Data de Nascimento</label>
+            <input 
+            type="date" 
+            id="nascimento" 
+            name="Data de Nascimento" 
+            placeholder="dd/mm/aaaa" 
+            required>
+
+            <label for="nome">Instituição de ensino</label>
+            <input 
+            type="text" 
+            id="ensino" 
+            name="escola" 
+            placeholder="Digite sua instituição de ensino">
+
+            <h2>Informações acadêmicas</h2>
+            <h3>Curso</h3>
+            <fieldset>
+                <label>
+                    <input type="radio" name="curso" value="Front-End">
+                    Desenvolvimento Front-End
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="curso" value="Back-End">
+                    Ciência da Computação
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="curso" value="Análise de Dados">
+                    Análise de Dados
+                </label>
+            </fieldset>
+            <h3>Período do seu Curso</h3>
+            <label>
+                <input type="radio" name="periodo" value="manha">
+                Manhã
+                <input type="radio" name="periodo" value="noite">
+                Noite
+           </label>
+           <h3>Horário previsto de chegada</h3>
+                <label>
+                    <input type="radio" name="hora" value="Manhã">
+                    10h00
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="hora" value="noite">
+                    19h00
+                </label>
+            <h2>Áreas de Interesse</h2>
+            <p>Selecione os temas de maior intersse</p>
+            <label>
+                <input type="radio" id="tema">
+                Desenvolvimento Web
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="tema" name="interesse">
+                Inteligencia Artificial
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="tema" name="interesse">
+                Computação em Nuvem
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="tema" name="interesse">
+                Segurança da informática
+            </label>
+            <h3>Atvidade de maior interesse</h3>
+            <fieldset>
+                <label>
+                <input type="radio" id="atividade" name="Maior interesse">
+                IA no Desenvolvimento de softwares
+                </label>
+                <br>
+                <label>
+                <input type="radio" id="atividade" name="Maior interesse">
+                Oficina: Construindo uma página web sem frameworks
+                </label>
+                <br>
+                <label>
+                <input type="radio" id="atividade" name="Maior interesse">
+                O navegador por trás da página
+                </label>
+                <br>
+                <input type="radio" id="atividade" name="Maior interesse">
+                Primeiros passos na computação em nuvem
+                </label>
+                <br>
+                <input type="radio" id="atividade" name="Maior interesse">
+                Segurança para quem desenvolve web
+                </label>
+                <br>
+                <input type="radio" id="atividade" name="Maior interesse">
+                Acessibilidade e Semântica Web
+                </label>
+                <br>
+                <input type="radio" id="atividade" name="Maior interesse">
+                Manipulção de SVGs dinâmicos
+                </label>
+                <br>
+                <input type="radio" id="atividade" name="Maior interesse">
+                WebAssembly: C/C++ no Navegador
+                </label>
+                <br>
+            </fieldset>
+            <h2>Outras Informações</h2>
+            <h3>O que você espera aprender no evento?</h3>
+            <input 
+            type="text" 
+            id="aprender" 
+            name="O que esperava aprender" 
+            placeholder="Escreve uma breve mensagem:">
+            <h2>Comprovante Acadêmico (opcional)</h2>
+            <button>Esolher arquivo</button>
+            <input type="radio" name="confirmo"> Confirmo que os dados informados são corretos
+            <br>
+            <button type="submit">Realizar inscrição</button>
+            <button>Limpar Formulário</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>Tech Experience 2027 - <a href="index.html">Voltar para a página inicial</a></p>
+</footer>
+</html>
